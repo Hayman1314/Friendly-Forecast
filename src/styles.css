@@ -1,9 +1,9 @@
 body {
   display: block;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(242, 235, 243) 0%,
-    rgb(234, 241, 249) 90.1%
+  background: linear-gradient(
+    111.5deg,
+    rgb(228, 247, 255) 21.9%,
+    rgb(255, 216, 194) 92.2%
   );
 }
 .container {
@@ -13,26 +13,29 @@ body {
   padding: 50px;
   background: linear-gradient(
     109.6deg,
-    rgb(204, 228, 247) 11.2%,
-    rgb(237, 246, 250) 100.2%
+    rgba(204, 228, 247, 0.6) 11.2%,
+    rgba(237, 246, 250, 0.6) 100.2%
   );
   border-radius: 50px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 #city {
   border-radius: 30px;
+  font-family: Noto Sans;
   border: none;
   color: rgba(39, 33, 66, 0.4);
   font-size: 16px;
   padding: 20px;
   border: none;
-  width: 50%;
+  width: 60%;
   background-color: #f9f7f7;
   box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 #search {
   border-radius: 30px;
   border: none;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: Noto Sans, Roboto, Arial, Helvetica, sans-serif;
   margin: 0px 20px;
   padding: 20px;
   width: 20%;
@@ -41,21 +44,19 @@ body {
   box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
 #search:hover {
-  background-color: #4ab1d3c2;
+  background-color: #1e9ace;
   cursor: pointer;
   transition: ease-in-out 225ms;
 }
-hr {
-  margin: 30px;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  border-top-color: rgba(0, 0, 0, 0.3);
+.form {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
 }
 .location {
   display: block;
   text-align: center;
   font-size: 35px;
+  font-family: Noto Sans, Roboto, Arial, Helvetica, sans-serif;
   font-weight: 800;
   color: #112d4e;
 }
@@ -63,17 +64,26 @@ hr {
   font-size: 28px;
   font-weight: 700;
 }
+.weather {
+  font-family: Noto Sans, Roboto, Arial, Helvetica, sans-serif;
+}
 .temperature-div {
   background-color: #ecf2f9;
   text-align: center;
-  display: block;
-  margin: 20px 200px;
-  padding: 5px;
+  font-family: Noto Sans, Roboto, Arial, Helvetica, sans-serif;
+  display: flex;
+  width: 150px;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 3px 10px 3px 10px;
   border-radius: 20px;
   line-height: 40px;
   box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
-
+.temperature-data {
+  display: flex;
+  justify-content: space-between;
+}
 .emoji {
   font-size: 35px;
 }
@@ -82,17 +92,60 @@ hr {
   font-weight: 800;
   color: #0e7cf4;
 }
+.unit {
+  font-size: 20px;
+}
+.date-time-div {
+  background-color: #ecf2f9;
+  line-height: 30px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
 .date-time-title {
+  margin-left: 50px;
+  color: rgba(77, 79, 79, 0.7);
+}
+.humidity-word {
   color: #112d4e;
 }
-.word {
+.wind-word {
   color: #112d4e;
+}
+.weather-data {
+  display: flex;
+  justify-content: space-between;
 }
 .number {
   color: #0e7cf4;
 }
+.time {
+  padding-left: 50px;
+}
+.humidity-wind-div {
+  background-color: #ecf2f9;
+  padding: 20px;
+  margin-top: 55px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
 footer {
+  border-top: 1px solid #f9f7fe;
+  color: rgba(77, 79, 79, 0.8);
+  padding: 30px 0 0 0;
   text-align: center;
   margin: 30px;
   font-size: 18px;
+  font-family: Noto Sans, Roboto, Arial, Helvetica, sans-serif;
+}
+a {
+  color: #3ec5ff;
+}
+a:hover {
+  color: #1e9ace;
 }

@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+CO+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+CO+Guides&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Friendly Forecast</title>
   </head>
 
@@ -16,43 +30,51 @@
             <input type="submit" value="Search" id="search" />
           </form>
         </div>
-        <hr />
+
         <div class="location">
           <p class="city">
             Paris
             <span class="country">,France</span>
           </p>
         </div>
+        <div class="weather">
+          <div class="temperature-div">
+            <p class="temperature-data">
+              <br />
+              <span class="emoji">🌥️</span>
+              <br />
+              <span class="temperature"> 27</span><span class="unit">°C </span>
+            </p>
+          </div>
+          <div class="weather-data">
+            <div class="date-time-div">
+              <p class="date-time">
+                <span class="date-time-title">Date & Time </span>
+                <br />
+                <strong class="word"
+                  ><span class="day">Sunday</span>,
+                  <span class="month">March</span> </strong
+                ><strong class="number dates">10, 2025</strong>
+                <br />
+                <strong class="number time">
+                  <span class="hours">11</span>:<span class="minutes">30</span>
+                  AM</strong
+                >
+              </p>
+            </div>
 
-        <div class="temperature-div">
-          <p>
-            <br />
-            <span class="emoji">🌥️</span>
-            <br />
-            <span class="temperature"> 27°C </span>
-          </p>
-        </div>
-
-        <div class="date-time-div">
-          <p class="date-time">
-            <span class="date-time-title">Date & Time </span>
-            <br />
-            <span class="word">Sunday, March </span
-            ><span class="number">10, 2025</span>
-            <br />
-            <span class="number"> 11:30 AM</span>
-          </p>
-        </div>
-
-        <div class="humidity-wind-div">
-          <p class="humidity-wind">
-            <span class="word"> Humidity:</span
-            ><span class="number"> 96%</span>,<span class="word"> Wind:</span>
-            <span class="number">2.57 km/h</span>
-          </p>
+            <div class="humidity-wind-div">
+              <p class="humidity-wind">
+                <span class="humidity-word"> Humidity:</span
+                ><strong class="number"> 96%</strong
+                ><span class="wind-word"> , <br />Wind:</span>
+                <strong class="number">2.57 km/h</strong>
+              </p>
+            </div>
+          </div>
         </div>
       </main>
-      <hr />
+
       <footer>
         This project was coded by
         <a href="https://github.com/Hayman1314"> Hayman Myat Noe</a>, is
