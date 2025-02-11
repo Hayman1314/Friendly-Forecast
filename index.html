@@ -3,34 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Friendly Forecast</title>
   </head>
-  <body>
-    <div class="form">
-      <form>
-        <input type="text" id="city" required />
-        <input type="submit" value="Search" id="search" />
-      </form>
-    </div>
-    <div class="temperature-div">
-      <h1 class="temperature">27°C <span class="emoji">🌥️</span></h1>
-    </div>
-    <div class="location">
-      <h2 class="city">Paris</h2>
-      <h4 class="country">France</h4>
-    </div>
-    <div class="date-time-div">
-      <h3 class="date-time">
-        <span class="date-time-title">Date & Time </span>
-        <br />
-        Sunday, March 10, 2025
-        <br />
-        11:30 AM
-      </h3>
-    </div>
 
-    <div class="humidity-wind-div">
-      <h3 class="humidity-wind">Humidity: 96%, Wind: 2.57 km/h</h3>
+  <body>
+    <div class="container">
+      <main>
+        <div class="form">
+          <form>
+            <input type="text" id="city" required />
+            <input type="submit" value="Search" id="search" />
+          </form>
+        </div>
+        <hr />
+        <div class="location">
+          <p class="city">
+            Paris
+            <span class="country">,France</span>
+          </p>
+        </div>
+
+        <div class="temperature-div">
+          <p>
+            <br />
+            <span class="emoji">🌥️</span>
+            <br />
+            <span class="temperature"> 27°C </span>
+          </p>
+        </div>
+
+        <div class="date-time-div">
+          <p class="date-time">
+            <span class="date-time-title">Date & Time </span>
+            <br />
+            <span class="word">Sunday, March </span
+            ><span class="number">10, 2025</span>
+            <br />
+            <span class="number"> 11:30 AM</span>
+          </p>
+        </div>
+
+        <div class="humidity-wind-div">
+          <p class="humidity-wind">
+            <span class="word"> Humidity:</span
+            ><span class="number"> 96%</span>,<span class="word"> Wind:</span>
+            <span class="number">2.57 km/h</span>
+          </p>
+        </div>
+      </main>
+      <hr />
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Hayman1314"> Hayman Myat Noe</a>, is
+        <a href="https://github.com/Hayman1314/Friendly-Forecast">
+          open-sourced on Github</a
+        >
+        and
+        <a href="https://friendly-forecast-weather-app.netlify.app/">
+          hosted on Netlify</a
+        >
+      </footer>
     </div>
   </body>
 </html>

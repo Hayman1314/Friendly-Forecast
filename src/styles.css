@@ -1,0 +1,98 @@
+body {
+  display: block;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+}
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 50px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(204, 228, 247) 11.2%,
+    rgb(237, 246, 250) 100.2%
+  );
+  border-radius: 50px;
+}
+#city {
+  border-radius: 30px;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  border: none;
+  width: 50%;
+  background-color: #f9f7f7;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+#search {
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  margin: 0px 20px;
+  padding: 20px;
+  width: 20%;
+  background-color: #3ec5ff;
+
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+#search:hover {
+  background-color: #4ab1d3c2;
+  cursor: pointer;
+  transition: ease-in-out 225ms;
+}
+hr {
+  margin: 30px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top-color: rgba(0, 0, 0, 0.3);
+}
+.location {
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+  color: #112d4e;
+}
+.country {
+  font-size: 28px;
+  font-weight: 700;
+}
+.temperature-div {
+  background-color: #ecf2f9;
+  text-align: center;
+  display: block;
+  margin: 20px 200px;
+  padding: 5px;
+  border-radius: 20px;
+  line-height: 40px;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.emoji {
+  font-size: 35px;
+}
+.temperature {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0e7cf4;
+}
+.date-time-title {
+  color: #112d4e;
+}
+.word {
+  color: #112d4e;
+}
+.number {
+  color: #0e7cf4;
+}
+footer {
+  text-align: center;
+  margin: 30px;
+  font-size: 18px;
+}
