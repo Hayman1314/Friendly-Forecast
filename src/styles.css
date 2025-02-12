@@ -60,7 +60,10 @@ body {
   font-weight: 800;
   color: #112d4e;
 }
-
+.country {
+  font-size: 28px;
+  font-weight: 700;
+}
 .weather {
   font-family: Noto Sans, Roboto, Arial, Helvetica, sans-serif;
 }
@@ -120,10 +123,10 @@ body {
 .condition {
   color: #112d4e;
 }
-.humidity-word {
+.humidity {
   color: #112d4e;
 }
-.wind-word {
+.wind {
   color: #112d4e;
 }
 
@@ -141,7 +144,12 @@ body {
   border-radius: 20px;
   box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
-
+.humidity-number {
+  color: #ff8f6d;
+}
+.wind-number {
+  color: #ff8f6d;
+}
 footer {
   border-top: 1px solid #f9f7fe;
   color: rgba(77, 79, 79, 0.8);
