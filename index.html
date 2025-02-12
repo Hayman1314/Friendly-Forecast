@@ -25,17 +25,19 @@
     <div class="container">
       <main>
         <div class="form">
-          <form>
-            <input type="text" id="city" required />
+          <form class="search-form">
+            <input
+              type="text"
+              id="search-input"
+              required
+              placeholder="Enter a city..."
+            />
             <input type="submit" value="Search" id="search" />
           </form>
         </div>
 
         <div class="location">
-          <p class="city">
-            Paris
-            <span class="country">,France</span>
-          </p>
+          <p class="city">Paris</p>
         </div>
         <div class="weather">
           <div class="temperature-div">
@@ -87,5 +89,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
