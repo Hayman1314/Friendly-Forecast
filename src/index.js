@@ -8,8 +8,8 @@ function getWeather(response) {
   let descriptionElement = document.querySelector(".condition");
   let humidityElement = document.querySelector(".humidity-number");
   let windElement = document.querySelector(".wind-number");
-  console.log(response.data.condition.description);
-  console.log(response.data.country);
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon">`;
 
   cityElement.innerHTML = response.data.city;
   countryElement.innerHTML = response.data.country;
@@ -69,4 +69,4 @@ function searchSubmit(event) {
 let searchForm = document.querySelector(".search-form");
 searchForm.addEventListener("submit", searchSubmit);
 
-searchCity("Paris");
+searchCity("Mandalay");
