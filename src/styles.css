@@ -92,15 +92,17 @@ body {
 .unit {
   color: #112d4e;
 }
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 .date-time-div {
   background-color: #ecf2f9;
   font-size: 15px;
-  line-height: 25px;
-  padding: 10px;
-  margin-top: 30px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  line-height: 20px;
+  padding: 10px 10px 10px 10px;
   border-radius: 20px;
   box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
@@ -108,8 +110,15 @@ body {
   color: #112d4e;
 }
 .date-time-title {
-  margin-left: 50px;
+  font-size: 15px;
+  margin-left: 45px;
   color: rgba(77, 79, 79, 0.7);
+}
+.time {
+  margin-left: 35px;
+}
+.condition {
+  color: #112d4e;
 }
 .humidity-word {
   color: #112d4e;
@@ -117,23 +126,18 @@ body {
 .wind-word {
   color: #112d4e;
 }
-.weather-data {
-  display: flex;
-  justify-content: space-between;
-}
+
 .number {
   color: #ff8f6d;
 }
+
 .time {
-  padding-left: 50px;
+  padding-left: 20px;
 }
-.humidity-wind-div {
+.weather-condition-div {
   background-color: #ecf2f9;
   font-size: 15px;
-  padding: 10px;
-  margin-top: 60px;
-  margin-right: 20px;
-  margin-bottom: 40px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.3);
 }
