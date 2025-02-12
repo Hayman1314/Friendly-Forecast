@@ -52,7 +52,7 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
   let month = months[date.getMonth()];
-  return `${day}, ${month} ${dates}, ${years}
+  return `${day}, ${month} ${dates}, ${years},
   ${hours}:${minutes}`;
 }
 function searchCity(city) {
